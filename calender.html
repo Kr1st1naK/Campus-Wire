@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusWire - Calendar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>CampusWire</h2>
+      <ul class="menu">
+        <li><span>🏠</span> Dashboard</li>
+        <li><span>📅</span> <a href="calender.html">Calendar</a></li>
+
+        <li><span>💬</span> Messages</li>
+        <li><span>🏫</span> Clubs</li>
+        <li><span>📢</span> Announcements</li>
+      </ul>
+      <footer>
+        <a href="#">FAQ & Support</a>
+      </footer>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <header class="top-menu">
+        <nav>
+          <a href="#">Home</a>
+          <a href="#" class="active">Calendar</a>
+          <a href="#">Settings</a>
+          <a href="profile.html">Profile</a>
+        </nav>
+      </header>
+
+      <!-- Calendar Container -->
+      <div class="calendar-container">
+        <div class="calendar-header">
+          <button id="prev-month">&lt;</button>
+          <h1 id="current-month"></h1>
+          <button id="next-month">&gt;</button>
+        </div>
+
+        <div class="calendar-grid" id="calendar-grid"></div>
+      </div>
+
+      <!-- Event Modal -->
+      <div class="event-modal" id="event-modal">
+        <h2>Add Event</h2>
+        <input type="text" id="event-title" placeholder="Event Title" />
+        <button id="save-event">Save</button>
+        <button id="close-modal">Cancel</button>
+      </div>
+    </main>
+  </div>
+ <!-- Footer -->
+ <footer class="footer">
+  <p>About Us | Contact | Privacy Policy</p>
+  <p>© 2023 UniConnect</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
